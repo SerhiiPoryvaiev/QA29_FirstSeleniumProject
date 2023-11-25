@@ -27,7 +27,7 @@ public class TestBase {
         return driver.findElements(locator).size()>0;
     }
 
-    @AfterMethod
+    @AfterMethod(enabled = false)
     public void tearDown(){
         //driver.quit();//all tabs and close browser
         driver.quit();

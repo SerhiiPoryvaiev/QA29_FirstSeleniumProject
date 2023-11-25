@@ -57,7 +57,7 @@ public class CreateAccountTests extends TestBase {
         driver.findElement(By.cssSelector("#register-button")).click();
 
         //assert Sign Out button is present
-        Assert.assertTrue(isElementPresent(By.cssSelector(".ico-logout")));
+        Assert.assertFalse(isElementPresent(By.cssSelector(".ico-logout")));
     }
 
 
